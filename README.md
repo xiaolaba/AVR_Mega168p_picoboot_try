@@ -4,7 +4,7 @@ Arduino IDE 1.8.13
 hardward : Nano with Atmega168P, Arduino IDE has no support, perhaps clone but not offical release. Atmega168 has different signature but supported
 
 
-### download and save the picoboot, not fork yet
+### download and save the picoboot, no fork yet,
 author's https://github.com/nerdralph/picoboot/tree/master/arduino
 
 download [picobootArduino168v3b2.hex](https://github.com/nerdralph/picoboot/blob/master/arduino/picobootArduino168v3b2.hex)  
