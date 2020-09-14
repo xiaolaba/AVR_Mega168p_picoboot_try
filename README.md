@@ -1,10 +1,19 @@
 # AVR_Mega168p_picoboot_try
-Arduino IDE and test this bootloader
+Arduino IDE and test this bootloader  
+Arduino IDE 1.8.13  
+hardward : Nano with Atmega168P, Arduino IDE has no support, perhaps clone but not offical release. Atmega168 has different signature but supported
 
+
+### download and save the picoboot,
 author's https://github.com/nerdralph/picoboot/tree/master/arduino
 
-Arduino IDE 1.8.13
-locate the boards.txt, find the lines
+download picobootArduino168v3b2.hex  
+copy to C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\atmega\  
+
+### make Arduino IDE to support this board and picoboot,
+
+locate the boards.txt, usually here, C:\Program Files (x86)\Arduino\hardware\arduino\avr
+copy the file to user folder, open the file, find the lines,
 ```
 ##############################################################  
   
@@ -24,7 +33,7 @@ nano.build.variant=eightanaloginputs
   
 ```  
    
-under section above, add following lines,  
+under section above, add following lines, and save to the folder/file 
 
 ```
 ## Arduino Nano w/ ATmega168p_picoboot  
@@ -44,5 +53,17 @@ nano.menu.cpu.atmega168p_picoboot.build.mcu=atmega168p
 
 
 ```  
+restart ARduino IDE, select board as created & seen,
+![picoboot_try_Arduino_IDE.JPG](picoboot_try_Arduino_IDE.JPG)  
+
+
+
+
+### burn the picoboot
+burn this bootloader to Nano (with Atmega168P) and try.  
+115200 baud, ok  
+230400 baud, NG  
+250000 baud, ok  
+ok
 
 
