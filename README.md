@@ -88,6 +88,5 @@ burn this bootloader to Nano (with Atmega168P) and try.
 115200 baud, ok  
 230400 baud, NG  
 250000 baud, ok  
-ok
 
 
