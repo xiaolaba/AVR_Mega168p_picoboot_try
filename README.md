@@ -1,7 +1,7 @@
 # AVR_Mega168p_picoboot_try
 Arduino IDE and test this bootloader  
 Arduino IDE 1.8.13  
-hardward : Nano with Atmega168P, Arduino IDE has no support, perhaps clone but not offical release. Atmega168 has different signature but supported
+hardware : Nano with Atmega168P, Arduino IDE has no support, perhaps clone but not offical release. Atmega168 has different signature but supported
 
 
 ### download and save the picoboot, no fork yet,
