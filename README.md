@@ -7,7 +7,7 @@ hardward : Nano with Atmega168P, Arduino IDE has no support, perhaps clone but n
 ### download and save the picoboot,
 author's https://github.com/nerdralph/picoboot/tree/master/arduino
 
-download picobootArduino168v3b2.hex  
+download [picobootArduino168v3b2.hex](https://github.com/nerdralph/picoboot/blob/master/arduino/picobootArduino168v3b2.hex)  
 copy to C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\atmega\  
 
 ### make Arduino IDE to support this board and picoboot,
