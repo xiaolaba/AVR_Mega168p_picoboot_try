@@ -37,7 +37,7 @@ in case donwload failed here is the local copy,
 
 ### make Arduino IDE to support this board and picoboot,
 
-locate the boards.txt, usually here, C:\Program Files (x86)\Arduino\hardware\arduino\avr
+locate the boards.txt, usually here, C:\Program Files (x86)\Arduino\hardware\arduino\avr  
 copy the file to user folder, open the file, find the lines,
 ```
 ##############################################################  
@@ -84,10 +84,63 @@ restart ARduino IDE, select board as created & seen,
 
 
 
+
+
+
 ### burn the picoboot
 burn this bootloader to Nano (with Atmega168P) and try.  
 115200 baud, ok  
 230400 baud, NG  
 250000 baud, ok  
+
+
+
+### try ATmega328p & picoboot  
+download, [https://github.com/nerdralph/picoboot/blob/master/arduino/picobootArduino328v3b2.hex](https://github.com/nerdralph/picoboot/blob/master/arduino/picobootArduino328v3b2.hex)  
+
+copy to, copy to C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\atmega\  
+in case donwload failed here is the local copy,   
+```  
+:1000000011241D9AFCE303D03197E9F7F9CF8A95C3
+:04001000F1F7089567
+:107E000024B621FE7CC0519AAA27BB27C4E631962E
+:107E1000489B04C0E1F7CA95D1F771C01196489B01
+:107E2000FDCFB695A795B695A795A695AB1FAA9534
+:107E3000C0ECDD2712E01883AC8328E1298350E1F0
+:107E400055D09033E9F718E01983BC81B3951197A9
+:107E5000C895E9F741E13FD029835E8347D0092FD8
+:107E6000A4E13FD0053521F433D0FC01EE0FFF1F14
+:107E7000063511F0013409F4BE830537E1F5AEE1B2
+:107E800030D0A5E92ED0AFE02CD0043679F41CD048
+:107E90009634C9F41DD00C0141E01DD03296325009
+:107EA000C9F7329743E017D045E015D0043759F4AD
+:107EB0000BD0E1BDF2BDA591953411F4F89AA0B5AF
+:107EC00010D03A95B1F7BFCF11D002D0382F089516
+:107ED0000DD0892F0BC017B710FDFDCF47BFE89518
+:107EE0000895188115FFFDCFAE830895188117FFFF
+:107EF000FDCF9E810895013541F65E83D983519867
+:00000001FF
+```  
+
+
+
+locate the boards.txt, usually here, C:\Program Files (x86)\Arduino\hardware\arduino\avr  
+under section above, add following lines, and save to the folder/file,
+```
+## Arduino Nano w/ ATmega328P_picoboot
+## --------------------------
+nano.menu.cpu.atmega328p_picoboot=ATmega328p  (picoboot v3b2)
+
+nano.menu.cpu.atmega328p_picoboot.upload.maximum_size=30720
+nano.menu.cpu.atmega328p_picoboot.upload.maximum_data_size=2048
+nano.menu.cpu.atmega328p_picoboot.upload.speed=250000
+
+nano.menu.cpu.atmega328p_picoboot.bootloader.low_fuses=0xFF
+nano.menu.cpu.atmega328p_picoboot.bootloader.high_fuses=0xDA
+nano.menu.cpu.atmega328p_picoboot.bootloader.extended_fuses=0xFD
+nano.menu.cpu.atmega328p_picoboot.bootloader.file=atmega/picobootArduino328v3b2.hex
+
+nano.menu.cpu.atmega328p_picoboot.build.mcu=atmega328p
+```  
 
 
