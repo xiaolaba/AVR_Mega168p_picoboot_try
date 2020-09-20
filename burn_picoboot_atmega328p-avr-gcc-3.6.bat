@@ -12,6 +12,13 @@ set hex=picobootArduino328v3b2.hex
 ::set hfuse=0xd6
 ::set efuse=0xfc
 
+
+:: Atmega328P, optiboot bootloader
+::set lfuse=0xFF
+::set hfuse=0xda
+::set efuse=0xfd
+
+
 ::set ac=C:\WinAVR-20100110
 :: 2020-09-07, download avr-gcc 3.6 from Microchip
 set ac=C:\avr8-gnu-toolchain-win32_x86
