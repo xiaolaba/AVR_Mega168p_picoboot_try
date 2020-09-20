@@ -142,5 +142,5 @@ nano.menu.cpu.atmega328p_picoboot.bootloader.file=picoboot/picobootArduino328v3b
 
 nano.menu.cpu.atmega328p_picoboot.build.mcu=atmega328p
 ```  
-
-
+.  
+250000 baud, ok  
