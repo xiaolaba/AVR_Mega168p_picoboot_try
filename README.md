@@ -9,7 +9,7 @@ note : Arduino IDE has no support to 168p, perhaps clone but not offical release
 author's https://github.com/nerdralph/picoboot/tree/master/arduino
 
 download [picobootArduino168v3b2.hex](https://github.com/nerdralph/picoboot/blob/master/arduino/picobootArduino168v3b2.hex)  
-copy to C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\atmega\  
+copy to C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\picoboot\ 
 in case donwload failed here is the local copy,  
   
 ```  
@@ -72,7 +72,7 @@ nano.menu.cpu.atmega168p_picoboot.upload.speed=250000
 nano.menu.cpu.atmega168p_picoboot.bootloader.low_fuses=0xf7  
 nano.menu.cpu.atmega168p_picoboot.bootloader.high_fuses=0xd6  
 nano.menu.cpu.atmega168p_picoboot.bootloader.extended_fuses=0xFc  
-nano.menu.cpu.atmega168p_picoboot.bootloader.file=atmega/picobootArduino168v3b2.hex  
+nano.menu.cpu.atmega168p_picoboot.bootloader.file=picoboot/picobootArduino168v3b2.hex  
 
 nano.menu.cpu.atmega168p_picoboot.build.mcu=atmega168p  
 
@@ -95,10 +95,10 @@ burn this bootloader to Nano (with Atmega168P) and try.
 
 
 
-### try ATmega328p & picoboot  
+# AVR_Mega328p_picoboot_try 
 download, [https://github.com/nerdralph/picoboot/blob/master/arduino/picobootArduino328v3b2.hex](https://github.com/nerdralph/picoboot/blob/master/arduino/picobootArduino328v3b2.hex)  
 
-copy to, copy to C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\atmega\  
+copy to, copy to C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\picoboot\  
 in case donwload failed here is the local copy,   
 ```  
 :1000000011241D9AFCE303D03197E9F7F9CF8A95C3
@@ -138,7 +138,7 @@ nano.menu.cpu.atmega328p_picoboot.upload.speed=250000
 nano.menu.cpu.atmega328p_picoboot.bootloader.low_fuses=0xFF
 nano.menu.cpu.atmega328p_picoboot.bootloader.high_fuses=0xDA
 nano.menu.cpu.atmega328p_picoboot.bootloader.extended_fuses=0xFD
-nano.menu.cpu.atmega328p_picoboot.bootloader.file=atmega/picobootArduino328v3b2.hex
+nano.menu.cpu.atmega328p_picoboot.bootloader.file=picoboot/picobootArduino328v3b2.hex
 
 nano.menu.cpu.atmega328p_picoboot.build.mcu=atmega328p
 ```  
