@@ -93,6 +93,11 @@ burn this bootloader to Nano (with Atmega168P) and try.
 230400 baud, NG  
 250000 baud, ok  
 
+:: Atmega168P, BOD 1.8V, Arduino bootloader, picoboot 250000 baud rate, tested ok   
+::set lfuse=0xF7  
+::set hfuse=0xd6  
+::set efuse=0xfc  
+
 
 
 # AVR_Mega328p_picoboot_try 
@@ -143,4 +148,14 @@ nano.menu.cpu.atmega328p_picoboot.bootloader.file=picoboot/picobootArduino328v3b
 nano.menu.cpu.atmega328p_picoboot.build.mcu=atmega328p
 ```  
 .  
-250000 baud, ok  
+
+:: Atmega328P, picoboot bootloader, UNO, 250000 baud, tested ok  
+set lfuse=0xF7  
+set hfuse=0xde  
+set efuse=0xff  
+
+
+:: Atmega328P, optiboot bootloader, Nano, baud rate 250000, tested ok
+::set lfuse=0xFF
+::set hfuse=0xda
+::set efuse=0xfd
