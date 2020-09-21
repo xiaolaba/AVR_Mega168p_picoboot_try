@@ -148,9 +148,9 @@ nano.menu.cpu.atmega328p_picoboot.upload.maximum_size=30720
 nano.menu.cpu.atmega328p_picoboot.upload.maximum_data_size=2048
 nano.menu.cpu.atmega328p_picoboot.upload.speed=250000
 
-nano.menu.cpu.atmega328p_picoboot.bootloader.low_fuses=0xFF
-nano.menu.cpu.atmega328p_picoboot.bootloader.high_fuses=0xDA
-nano.menu.cpu.atmega328p_picoboot.bootloader.extended_fuses=0xFD
+nano.menu.cpu.atmega328p_picoboot.bootloader.low_fuses=0xF7
+nano.menu.cpu.atmega328p_picoboot.bootloader.high_fuses=0xD6
+nano.menu.cpu.atmega328p_picoboot.bootloader.extended_fuses=0xFc
 nano.menu.cpu.atmega328p_picoboot.bootloader.file=picoboot/picobootArduino328v3b2.hex
 
 nano.menu.cpu.atmega328p_picoboot.build.mcu=atmega328p
