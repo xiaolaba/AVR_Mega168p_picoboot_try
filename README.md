@@ -37,7 +37,7 @@ in case donwload failed here is the local copy,
 
 ### make Arduino IDE to support this board and picoboot,
 
-locate the boards.txt, usually here, C:\Program Files (x86)\Arduino\hardware\arduino\avr  
+locate the boards.txt, usually here, ```C:\Program Files (x86)\Arduino\hardware\arduino\avr```  
 copy the file to user folder, open the file, find the lines,
 ```
 ##############################################################  
@@ -103,7 +103,7 @@ burn this bootloader to Nano (with Atmega168P) and try.
 # AVR_Mega328p_picoboot_try 
 download, [https://github.com/nerdralph/picoboot/blob/master/arduino/picobootArduino328v3b2.hex](https://github.com/nerdralph/picoboot/blob/master/arduino/picobootArduino328v3b2.hex)  
 
-copy to, copy to C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\picoboot\  
+copy to, copy to ```C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\picoboot\```    
 in case donwload failed here is the local copy,   
 ```  
 :1000000011241D9AFCE303D03197E9F7F9CF8A95C3
@@ -129,7 +129,7 @@ in case donwload failed here is the local copy,
 
 
 
-locate the boards.txt, usually here, C:\Program Files (x86)\Arduino\hardware\arduino\avr  
+locate the boards.txt, usually here, ```C:\Program Files (x86)\Arduino\hardware\arduino\avr```    
 under section above, add following lines, and save to the folder/file,
 ```
 ## Arduino Nano w/ ATmega328P_picoboot
@@ -149,13 +149,13 @@ nano.menu.cpu.atmega328p_picoboot.build.mcu=atmega328p
 ```  
 .  
 
-:: Atmega328P, picoboot bootloader, UNO, 250000 baud, tested ok  
+:: Atmega328P, picoboot bootloader, UNO, 250000 baud, tested ok    
 set lfuse=0xF7  
-set hfuse=0xde  
-set efuse=0xff  
+set hfuse=0xde    
+set efuse=0xff    
 
 
-:: Atmega328P, optiboot bootloader, Nano, baud rate 250000, tested ok
-::set lfuse=0xFF
-::set hfuse=0xda
-::set efuse=0xfd
+:: Atmega328P, optiboot bootloader, Nano, baud rate 250000, tested ok  
+::set lfuse=0xFF  
+::set hfuse=0xda  
+::set efuse=0xfd  
