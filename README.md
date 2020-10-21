@@ -9,7 +9,7 @@ note : Arduino IDE has no support to 168p, perhaps clone but not offical release
 author's https://github.com/nerdralph/picoboot/tree/master/arduino
 
 download [picobootArduino168v3b2.hex](https://github.com/nerdralph/picoboot/blob/master/arduino/picobootArduino168v3b2.hex)  
-copy to [C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\picoboot\]("C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\picoboot\1")   
+copy to ["C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\picoboot\"]("C:\Program Files (x86)\Arduino\hardware\arduino\avr\bootloaders\picoboot\1")   
 in case donwload failed here is the local copy,  
   
 ```  
