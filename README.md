@@ -132,20 +132,74 @@ in case donwload failed here is the local copy,
 locate the boards.txt, usually here, ```C:\Program Files (x86)\Arduino\hardware\arduino\avr```    
 under section above, add following lines, and save to the folder/file,
 ```
-## Arduino Nano w/ ATmega328P_picoboot
+uno.name=Arduino Uno
+
+uno.vid.0=0x2341
+uno.pid.0=0x0043
+uno.vid.1=0x2341
+uno.pid.1=0x0001
+uno.vid.2=0x2A03
+uno.pid.2=0x0043
+uno.vid.3=0x2341
+uno.pid.3=0x0243
+
+uno.upload.tool=avrdude
+uno.upload.protocol=arduino
+#uno.upload.maximum_size=32256
+#uno.upload.maximum_data_size=2048
+#uno.upload.speed=115200
+
+uno.bootloader.tool=avrdude
+#uno.bootloader.low_fuses=0xFF
+#uno.bootloader.high_fuses=0xDE
+#uno.bootloader.extended_fuses=0xFD
+uno.bootloader.unlock_bits=0x3F
+uno.bootloader.lock_bits=0x0F
+#uno.bootloader.file=optiboot/optiboot_atmega328.hex
+
+#uno.build.mcu=atmega328p
+uno.build.f_cpu=16000000L
+uno.build.board=AVR_UNO
+uno.build.core=arduino
+#uno.build.variant=standard
+nano.build.variant=eightanaloginputs
+
+
+
+
+## xialaba 2020-OCT-20
+## Arduino UNO w/ ATmega328P optiboot
 ## --------------------------
-nano.menu.cpu.atmega328p_picoboot=ATmega328p (picoboot v3b2)
+uno.menu.cpu.atmega328_optiboot=ATmega328P (optiboot standard)
 
-nano.menu.cpu.atmega328p_picoboot.upload.maximum_size=30720
-nano.menu.cpu.atmega328p_picoboot.upload.maximum_data_size=2048
-nano.menu.cpu.atmega328p_picoboot.upload.speed=250000
+uno.menu.cpu.atmega328_optiboot.upload.maximum_size=32256
+uno.menu.cpu.atmega328_optiboot.upload.maximum_data_size=2048
+uno.menu.cpu.atmega328_optiboot.upload.speed=115200
 
-nano.menu.cpu.atmega328p_picoboot.bootloader.low_fuses=0xF7
-nano.menu.cpu.atmega328p_picoboot.bootloader.high_fuses=0xD6
-nano.menu.cpu.atmega328p_picoboot.bootloader.extended_fuses=0xFc
-nano.menu.cpu.atmega328p_picoboot.bootloader.file=picoboot/picobootArduino328v3b2.hex
+uno.menu.cpu.atmega328_optiboot.bootloader.low_fuses=0xFF
+uno.menu.cpu.atmega328_optiboot.bootloader.high_fuses=0xDA
+uno.menu.cpu.atmega328_optiboot.bootloader.extended_fuses=0xFD
+uno.menu.cpu.atmega328_optiboot.bootloader.file=optiboot/optiboot_atmega328.hex  
 
-nano.menu.cpu.atmega328p_picoboot.build.mcu=atmega328p
+uno.menu.cpu.atmega328_optiboot.build.mcu=atmega328p
+
+
+
+## xialaba 2020-OCT-20
+## Arduino UNO w/ ATmega328P_picoboot
+## --------------------------
+uno.menu.cpu.atmega328_picoboot=ATmega328P (picoboot v3b2)
+
+uno.menu.cpu.atmega328_picoboot.upload.maximum_size=30720
+uno.menu.cpu.atmega328_picoboot.upload.maximum_data_size=2048
+uno.menu.cpu.atmega328_picoboot.upload.speed=250000
+
+uno.menu.cpu.atmega328_picoboot.bootloader.low_fuses=0xFF
+uno.menu.cpu.atmega328_picoboot.bootloader.high_fuses=0xDA
+uno.menu.cpu.atmega328_picoboot.bootloader.extended_fuses=0xFD
+uno.menu.cpu.atmega328_picoboot.bootloader.file=picoboot/picobootArduino328v3b2.hex  
+
+uno.menu.cpu.atmega328_picoboot.build.mcu=atmega328p
 ```  
 .  
 
