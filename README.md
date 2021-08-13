@@ -128,9 +128,10 @@ in case donwload failed here is the local copy,
 ```  
 
 
-
+### make UNO to support picoboot too   
 locate the boards.txt, usually here, ```C:\Program Files (x86)\Arduino\hardware\arduino\avr```    
 under section above, add following lines, and save to the folder/file,
+find Uno, replace the text as following, for Arduino IDE 1.8.15  
 ```
 uno.name=Arduino Uno
 
