@@ -39,6 +39,8 @@ in case donwload failed here is the local copy,
 
 locate the boards.txt, usually here, ```C:\Program Files (x86)\Arduino\hardware\arduino\avr```  
 copy the file to user folder, open the file, find the lines,
+or, replace with boards_arduino-1.8.13.txt / boards_arduino-1.8.15.txt  
+
 ```
 ##############################################################  
   
