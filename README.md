@@ -37,9 +37,12 @@ in case donwload failed here is the local copy,
 
 ### make Arduino IDE to support this board and picoboot,
 
+Arduino IDE 1.8.19, borad.txt is located ```%userprofile%\AppData\Local\Arduino15\packages\arduino\hardware\avr\1.8.6```
+
 locate the boards.txt, usually here, ```C:\Program Files (x86)\Arduino\hardware\arduino\avr```  
 copy the file to user folder, open the file, find the lines,
-or, replace with boards_arduino-1.8.13.txt / boards_arduino-1.8.15.txt  
+or, replace with boards_arduino-1.8.13.txt   
+or, boards_arduino-1.8.15.txt  
 
 ```
 ##############################################################  
