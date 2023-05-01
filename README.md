@@ -1,6 +1,6 @@
 # AVR_Mega168p_picoboot_try
 Arduino IDE and test this bootloader  
-Arduino IDE 1.8.13, update to 1.8.13, support UNO, NANO, 168p 328p  
+Arduino IDE 1.8.13, update to 1.8.13 / 1.8.19, support UNO, NANO, 168p 328p  
 hardware : Nano with Atmega168P, 16MHz  
 note : Arduino IDE has no support to 168p, perhaps clone but not offical release. Atmega168 has different signature but supported
 
